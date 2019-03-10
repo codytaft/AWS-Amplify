@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Amplify from 'aws-amplify';
-import amplify from './aws-exports';
+import Amplify, { API } from 'aws-amplify';
 import awsmobile from './aws-exports';
 import { withAuthenticator } from 'aws-amplify-react-native';
 import ApiCall from './ApiCall';
+import Form from './Form';
 
 // Amplify.configure(amplify);
 Amplify.configure(awsmobile);
@@ -15,6 +15,7 @@ class App extends React.Component {
       <View style={styles.container}>
         <Text style={styles.text}>The Amplify Test</Text>
         <ApiCall />
+        <Form />
       </View>
     );
   }
