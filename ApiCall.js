@@ -21,8 +21,8 @@ export default class ApiCall extends Component {
       <View>
         <Button title='Send Request' onPress={this.getSample.bind(this)} />
         <Text style={styles.text}>
-          Response:
-          {this.state.apiResponse && JSON.stringify(this.state.apiResponse)}
+          {this.state.apiResponse &&
+            `Response: ` + JSON.stringify(this.state.apiResponse)}
         </Text>
       </View>
     );
