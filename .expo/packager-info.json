@@ -1,10 +1,10 @@
 {
-  "devToolsPort": 19003,
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
+  "devToolsPort": 19002,
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 18630,
+  "expoServerNgrokUrl": "https://px-m9e.anonymous.amplify.exp.direct",
+  "packagerNgrokUrl": "https://packager.px-m9e.anonymous.amplify.exp.direct",
+  "ngrokPid": 18644,
   "webpackServerPort": null
 }

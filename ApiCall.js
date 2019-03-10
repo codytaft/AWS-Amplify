@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Amplify, { API } from 'aws-amplify';
+
 import { Text, View, Button, StyleSheet } from 'react-native';
 
 export default class ApiCall extends Component {
@@ -6,9 +8,12 @@ export default class ApiCall extends Component {
 
   async getSample() {
     const path = '/items'; // you can specify the path
-    const apiResponse = await API.get('theListApi', path); //replace the API name
-    console.log('response:' + apiResponse);
-    this.setState({ apiResponse });
+    try {
+      const apiResponse = await API.get('theList2', path); //replace the API name
+      this.setState({ apiResponse });
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   render() {

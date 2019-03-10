@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Amplify, { API } from 'aws-amplify';
+import Amplify from 'aws-amplify';
 import amplify from './aws-exports';
 import awsmobile from './aws-exports';
 import { withAuthenticator } from 'aws-amplify-react-native';
 import ApiCall from './ApiCall';
 
-Amplify.configure(amplify);
+// Amplify.configure(amplify);
 Amplify.configure(awsmobile);
 
 class App extends React.Component {
