@@ -1,0 +1,14 @@
+{
+	"auth": {
+		"cognito2155eee7": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"analytics": {
+		"amplify": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}
