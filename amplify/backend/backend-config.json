@@ -17,21 +17,6 @@
 			"providerPlugin": "awscloudformation",
 			"build": true,
 			"dependsOn": []
-		},
-		"NotesCRUD": {
-			"service": "Lambda",
-			"providerPlugin": "awscloudformation",
-			"build": true,
-			"dependsOn": [
-				{
-					"category": "storage",
-					"resourceName": "dynamo04b0ac6d",
-					"attributes": [
-						"Name",
-						"Arn"
-					]
-				}
-			]
 		}
 	},
 	"api": {
@@ -48,26 +33,7 @@
 					]
 				}
 			]
-		},
-		"NotesCRUD": {
-			"service": "API Gateway",
-			"providerPlugin": "awscloudformation",
-			"dependsOn": [
-				{
-					"category": "function",
-					"resourceName": "NotesCRUD",
-					"attributes": [
-						"Name",
-						"Arn"
-					]
-				}
-			]
 		}
 	},
-	"storage": {
-		"dynamo04b0ac6d": {
-			"service": "DynamoDB",
-			"providerPlugin": "awscloudformation"
-		}
-	}
+	"storage": {}
 }
