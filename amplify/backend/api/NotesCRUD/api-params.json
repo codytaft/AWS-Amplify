@@ -4,7 +4,9 @@
             "name": "/Notes",
             "lambdaFunction": "NotesCRUD",
             "privacy": {
-                "open": true
+                "protected": true,
+                "auth": "rw",
+                "unauth": "rw"
             }
         }
     ],
@@ -16,8 +18,8 @@
         }
     ],
     "privacy": {
-        "auth": 0,
-        "unauth": 0,
+        "auth": 1,
+        "unauth": 1,
         "authRoleName": "amplify-20190309225726-authRole",
         "unAuthRoleName": "amplify-20190309225726-unauthRole"
     },
