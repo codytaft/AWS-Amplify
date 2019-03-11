@@ -1,0 +1,13 @@
+{
+    "bucketName": "content-storage",
+    "authPolicyName": "s3_amplify_6dfb47fe",
+    "unauthPolicyName": "s3_amplify_6dfb47fe",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authPermissions": "rw",
+    "unauthPermissions": "rw"
+}

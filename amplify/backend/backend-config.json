@@ -68,6 +68,10 @@
 		"Notes": {
 			"service": "DynamoDB",
 			"providerPlugin": "awscloudformation"
+		},
+		"contentStorage": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
 		}
 	}
 }
