@@ -1,0 +1,36 @@
+{
+    "paths": [
+        {
+            "name": "/Notes",
+            "lambdaFunction": "NotesCRUD",
+            "privacy": {
+                "protected": true,
+                "auth": "rw",
+                "unauth": "rw"
+            }
+        }
+    ],
+    "resourceName": "NotesCRUD",
+    "apiName": "NotesCRUD",
+    "functionArns": [
+        {
+            "lambdaFunction": "NotesCRUD"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "amplify-20190309225726-authRole",
+        "unAuthRoleName": "amplify-20190309225726-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "NotesCRUD",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

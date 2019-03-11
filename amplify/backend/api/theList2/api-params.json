@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "theListFunction2",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "theList2",
+    "apiName": "theList2",
+    "functionArns": [
+        {
+            "lambdaFunction": "theListFunction2"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-20190309225726-authRole",
+        "unAuthRoleName": "amplify-20190309225726-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "theListFunction2",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
