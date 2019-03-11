@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Amplify, { Storage } from 'aws-amplify';
+import Amplify, { Storage, Analytics } from 'aws-amplify';
 import awsmobile from './aws-exports';
 import { withAuthenticator } from 'aws-amplify-react-native';
 import ApiCall from './ApiCall';
@@ -12,6 +12,7 @@ Amplify.configure(awsmobile);
 
 class App extends React.Component {
   componentDidMount = async () => {
+    Analytics.record('App-Mount');
     const path = this.props.path;
     const access = { level: 'public' };
     let files = await Storage.list(path, access);
